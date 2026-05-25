@@ -93,6 +93,26 @@ POST /search/semantic
 - Extend `ScrapedContent` with `author`, `published_date`, `reading_time`
 - Add pagination to `/search` with `offset` and `limit` params
 
+## Health Check
+
+```bash
+curl http://localhost:8003/health
+```
+
+Expected response:
+```json
+{"status": "ok"}
+```
+
+Also useful to confirm the index file path is writable before your first scrape:
+
+```bash
+curl http://localhost:8003/index
+# {"pages": [], "total": 0}
+```
+
+If `/index` returns a `500`, check that `INDEX_FILE` in `.env` points to a directory your process can write to.
+
 ## Requirements
 
 - Python 3.11+
