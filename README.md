@@ -1,3 +1,5 @@
+> **Commercial status:** Deferred commercial product. This repository may be useful as a code reference, but the product is not the active flagship and should not be promoted until its package, README, and listing are re-verified.
+
 # Web Scraper + Semantic Search (pydantic-ai + FastAPI)
 
 Scrapes any URL, extracts structured content with `pydantic-ai`, and stores it in a searchable local index. Supports both keyword search and AI-powered semantic search with ranked results.
